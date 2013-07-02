@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<title>Quiz</title>
+		<script type='text/javascript' src='//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js'></script>
+		<script type='text/javascript' src='http://localhost:2337/socket.io/socket.io.js'></script>
+		<script type='text/javascript' src='/app.js'></script>
+	</head>
+	<body>
+		<div id='nick_data'>
+			<input type='text' id='nickname' name='nickname' placeholder='Enter your nick'>
+			<input type='button' id='nickname_submit' value='Submit'>
+		</div>
+		<div id='game_field' style='display: none;'>
+			<textarea id='game_area' rows='40' cols='160' readonly='readonly' wrap='soft'></textarea>
+			<div id='game_inputs'>
+				<input type='text' id='answer' name='answer' placeholder='your answer'>
+				<input type='button' id='answer_submit' value='Submit'>
+			</div>
+		</div>
+	</body>
+</html>
